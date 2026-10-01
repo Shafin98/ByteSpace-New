@@ -8,11 +8,17 @@ import avatar7 from '../../assets/images/avatar-7.png'
 
 const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7]
 
+const tones = {
+  lime: 'bg-secondary-400 text-neutral-950',
+  dark: 'bg-neutral-950 text-white',
+}
+
 export default function AvatarStack({
   count = '2K+',
   size = 43,
   overlap = 17,
   max = avatars.length,
+  tone = 'lime'
 }) {
   return (
     <div className="flex items-center">
@@ -29,7 +35,7 @@ export default function AvatarStack({
       ))}
       <span
         style={{ width: size, height: size, marginLeft: -overlap }}
-        className={`z-10 flex items-center justify-center rounded-full bg-secondary-400 font-medium text-neutral-950 ring-2 ring-white ${
+        className={`z-10 flex items-center justify-center rounded-full ${tones[tone]} font-medium ring-2 ring-white ${
           size < 40 ? 'text-label-xs' : 'text-label-s'
         }`}
       >
