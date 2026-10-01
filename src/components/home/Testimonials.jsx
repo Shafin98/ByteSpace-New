@@ -1,9 +1,11 @@
 import Container from '../ui/Container'
 import { testimonials } from '../../data/testimonials'
 
-const lime = '212 251 32' 
-const blue = '40 114 255' 
+const lime = '212 251 32' // secondary-400
+const blue = '40 114 255' // primary-500
 
+// Background glows, estimated from the Figma export (px on a 1440px canvas, from the
+// top of the section). Same technique as GlowBackground: radial fill, colour -> transparent.
 const glows = [
   { rgb: lime, alpha: 0.5, size: 700, left: 424, top: -173 },
   { rgb: lime, alpha: 0.4, size: 500, left: 1177, top: 82 },
@@ -39,7 +41,7 @@ function TestimonialCard({ name, role, avatar, quote }) {
         <p className="font-heading text-heading-xs font-semibold text-neutral-950">{name}</p>
         <p className="mt-1 text-body-m text-primary-700">{role}</p>
       </figcaption>
-      <blockquote className="mt-6 text-body-m leading-[1.8] text-neutral-600">{quote}</blockquote>
+      <blockquote className="mt-7 text-body-l text-neutral-700">{quote}</blockquote>
     </figure>
   )
 }
@@ -54,7 +56,7 @@ export default function Testimonials() {
       <Glows />
 
       <Container className="relative">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between lg:gap-12">
           <h2
             id="testimonials-title"
             className="font-heading text-heading-s font-semibold text-neutral-950 md:text-heading-m"
@@ -62,7 +64,7 @@ export default function Testimonials() {
             Discover What Our <br className="hidden md:block" />
             Community Is Saying
           </h2>
-          <p className="text-body-m leading-[1.8] text-neutral-600 lg:max-w-145">
+          <p className="text-body-l text-neutral-700 lg:max-w-145">
             At ByteSpace, our vibrant community of learners and creators is at the heart of what
             we do. Hear directly from those who have experienced the transformative journey of
             learning and creating on our platform. Explore testimonials that reflect the diverse
@@ -70,7 +72,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="mt-10 grid items-start gap-6 md:mt-16 lg:grid-cols-3 lg:gap-10">
+        <div className="mt-10 grid items-start gap-6 md:mt-18 lg:grid-cols-3 lg:gap-10">
           {testimonials.map((t) => (
             <TestimonialCard key={t.id} {...t} />
           ))}

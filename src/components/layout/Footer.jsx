@@ -4,7 +4,7 @@ import { footerColumns, legalLinks } from '../../data/footerLinks'
 import logo from '../../assets/images/logo-dark.svg'
 
 const linkClass =
-  'text-body-s text-neutral-700 transition-colors hover:text-primary-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-700'
+  'text-body-s text-neutral-950 transition-colors hover:text-primary-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-700'
 
 export default function Footer() {
   return (
@@ -16,7 +16,7 @@ export default function Footer() {
             <a href="/" aria-label="ByteSpace home" className="inline-block">
               <img src={logo} alt="ByteSpace" width={171} height={37} className="h-9.25 w-auto" />
             </a>
-            <p className="mt-5 max-w-130 text-body-s text-neutral-900">
+            <p className="mt-5 max-w-130 text-body-s text-neutral-950">
               Stay Up to date with our latest features and releases by joining our newsletter.
             </p>
 
@@ -34,7 +34,7 @@ export default function Footer() {
               </Button>
             </form>
 
-            <p className="mt-6 max-w-120 text-body-xs text-neutral-900">
+            <p className="mt-6 max-w-120 text-body-xs text-neutral-950">
               By subscribing, you agree to our Privacy Policy and consent to receive updates from
               our company.
             </p>
@@ -62,7 +62,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 border-t border-neutral-100 pt-6 lg:mt-33">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-body-xs text-neutral-700">
+            <p className="text-body-xs text-neutral-950">
               @ 2023 ByteSpace. All rights reserved.
             </p>
             <ul className="flex flex-wrap gap-x-6 gap-y-2">
