@@ -1,11 +1,9 @@
 import Container from '../ui/Container'
 import { testimonials } from '../../data/testimonials'
 
-const lime = '212 251 32' // secondary-400
-const blue = '40 114 255' // primary-500
+const lime = '212 251 32'
+const blue = '40 114 255' 
 
-// Background glows, estimated from the Figma export (px on a 1440px canvas, from the
-// top of the section). Same technique as GlowBackground: radial fill, colour -> transparent.
 const glows = [
   { rgb: lime, alpha: 0.5, size: 700, left: 424, top: -173 },
   { rgb: lime, alpha: 0.4, size: 500, left: 1177, top: 82 },
