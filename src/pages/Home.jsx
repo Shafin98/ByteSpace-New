@@ -4,6 +4,7 @@ import LogoStrip from '../components/home/LogoStrip'
 import CourseDiscovery from '../components/home/CourseDiscovery'
 import LearningPaths from '../components/home/LearningPaths'
 import Showcase from '../components/home/Showcase'
+import CreatorCTA from '../components/home/CreatorCTA'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <CourseDiscovery />
         <LearningPaths />
         <Showcase />
+        <CreatorCTA />
       </main>
     </div>
   )

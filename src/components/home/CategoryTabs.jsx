@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-// The Figma lays the pills out in three fixed rows, so we keep them as rows.
 const categoryRows = [
   [
     'Featured',

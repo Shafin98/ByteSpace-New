@@ -1,5 +1,3 @@
-// Faint grid used on the blue sections (hero, creator CTA).
-// Cell size and line opacity are estimates, tune them against Figma.
 export default function GridBackground({ cell = 80, className = '' }) {
   const line = 'rgba(255,255,255,0.08)'
   return (

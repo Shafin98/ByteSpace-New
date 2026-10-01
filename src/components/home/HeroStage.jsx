@@ -8,11 +8,6 @@ import whiteRing from '../../assets/images/shape-white-ring.png'
 import whiteTriangle from '../../assets/images/shape-white-triangle.png'
 import whiteSquiggleLg from '../../assets/images/shape-white-squiggle-lg.png'
 
-/*
-  The artwork is laid out on a fixed 1440px canvas (same coordinates as Figma,
-  with y measured from the bottom of the search bar) and the whole canvas is
-  scaled down on smaller screens, so the composition stays intact.
-*/
 const shapes = [
   { src: whiteSquiggleSm, w: 176, h: 176, className: 'left-[187px] top-[-43px] hidden md:block' },
   { src: whiteTriangle, w: 189, h: 189, className: 'left-[1086px] top-[-55px] hidden md:block' },
@@ -49,7 +44,7 @@ export default function HeroStage() {
           className="absolute left-1/2 top-0 z-20 -translate-x-1/2"
         />
 
-        {/* Floating cards (hidden on phones, they would be unreadable when scaled) */}
+        {/* Floating cards */}
         <FloatingCard className="left-101 top-31.25 hidden w-52 md:block">
           <p className="text-label-s font-medium text-neutral-950">UI/UX Design</p>
           <p className="mt-1 text-body-xs text-neutral-400">200 Courses • 1000+ Students</p>

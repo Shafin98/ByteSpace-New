@@ -12,7 +12,6 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-primary-700 pt-18 md:pt-30">
       <GridBackground />
 
-      {/* Shapes that bleed off the left and right edges of the hero */}
       <img
         src={limeSquiggle}
         alt=""

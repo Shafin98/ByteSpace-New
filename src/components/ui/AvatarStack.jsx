@@ -8,8 +8,6 @@ import avatar7 from '../../assets/images/avatar-7.png'
 
 const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6, avatar7]
 
-// Overlapping avatars followed by a lime counter bubble.
-// Defaults match the hero card, the course cards use size 32 / overlap 14 / max 5.
 export default function AvatarStack({
   count = '2K+',
   size = 43,

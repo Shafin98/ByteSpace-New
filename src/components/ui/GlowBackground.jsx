@@ -1,10 +1,6 @@
-const lime = '212 251 32' // secondary-400
-const blue = '40 114 255' // primary-500
+const lime = '212 251 32' 
+const blue = '40 114 255' 
 
-// The five Figma ellipses behind "Frame 15", back to front. Each is a radial fill
-// (colour -> transparent) with the fill opacity shown in Figma as `alpha`.
-// Coordinates are px on a 1440px canvas, from the top of the section; the two that
-// sit low are anchored to the bottom so they stay at the bottom when the section grows.
 const glows = [
   { rgb: blue, alpha: 0.24, size: 1137, left: 722, bottom: -461 }, // Ellipse 8
   { rgb: lime, alpha: 0.4, size: 1137, left: -152, top: -466 }, // Ellipse 11

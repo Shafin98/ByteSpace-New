@@ -31,11 +31,6 @@ function CheckIcon() {
 
 const cardBase = 'absolute left-0 z-10 hidden rounded-xl bg-primary-700 p-4 text-white sm:block'
 
-/*
-  Fixed 541 x 596 canvas (Figma px). The 435 x 596 woman PNG sits 28px in from the left;
-  the blue cards start at x = 0 and sit behind her, and the Happy Students card sticks
-  78px out past her right edge (28 + 435 + 78 = 541).
-*/
 export default function CourseCreation() {
   return (
     <section>

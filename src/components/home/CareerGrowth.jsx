@@ -12,11 +12,6 @@ const stats = [
   { value: '16', label: 'Creators' },
 ]
 
-/*
-  The visual is a fixed 600 x 551 canvas (Figma px, origin = left edge of the right column,
-  top = top of the course card) that is scaled down below lg, like HeroStage.
-  The student is the hero artwork at ~1.05x.
-*/
 export default function CareerGrowth() {
   return (
     <section>
