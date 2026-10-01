@@ -2,6 +2,8 @@ import Navbar from '../components/layout/Navbar'
 import Hero from '../components/home/Hero'
 import LogoStrip from '../components/home/LogoStrip'
 import CourseDiscovery from '../components/home/CourseDiscovery'
+import LearningPaths from '../components/home/LearningPaths'
+import Showcase from '../components/home/Showcase'
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
         <Hero />
         <LogoStrip />
         <CourseDiscovery />
+        <LearningPaths />
+        <Showcase />
       </main>
     </div>
   )
