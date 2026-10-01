@@ -2,7 +2,9 @@ import CourseCard from '../home/CourseCard'
 import AvatarStack from '../ui/AvatarStack'
 import { StarIcon } from '../ui/icons'
 import { courses } from '../../data/courses'
-import limeRing from '../../assets/images/cta-lime-ring.png'
+
+// Shapes already used elsewhere in the project. Swap an import here if one doesn't match Figma.
+import limeRing from '../../assets/images/auth-lime-ring.png'
 import limeCone from '../../assets/images/cta-lime-triangle.png'
 import whiteSquiggle from '../../assets/images/shape-white-squiggle-sm.png'
 
@@ -28,7 +30,7 @@ export default function AuthIllustration({ className = '' }) {
           <CourseCard course={bigData} />
         </div>
 
-        <img src={limeRing} alt="" className={`${shape} left-12.75 top-8.75 z-20 w-36`} />
+        <img src={limeRing} alt="" className={`${shape} left-7.75 top-4.25 z-20 w-34`} />
         <img src={limeCone} alt="" className={`${shape} left-0 top-103.25 z-20 w-30`} />
         <img src={whiteSquiggle} alt="" className={`${shape} left-94 top-85 z-40 w-30`} />
 

@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom'
 import Container from '../ui/Container'
 import GridBackground from '../ui/GridBackground'
 import AuthIllustration from './AuthIllustration'
-import { LogoMark } from './authIcons'
+import logo from '../../assets/images/logo-light.svg'
 
+// Shared by Login and Register: blue grid, left intro + illustration, white card on the right.
 export default function AuthLayout({ title, description, children }) {
   return (
     <div className="relative min-h-screen overflow-hidden bg-primary-700">
@@ -14,9 +15,9 @@ export default function AuthLayout({ title, description, children }) {
           <Link
             to="/"
             aria-label="ByteSpace home"
-            className="inline-block text-secondary-400 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            className="inline-block focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           >
-            <LogoMark className="h-9.5 w-auto" />
+            <img src={logo} alt="ByteSpace" className="h-8 w-auto md:h-9.25" />
           </Link>
 
           <h2 className="mt-8 font-heading text-heading-xs font-medium text-white lg:mt-14">
